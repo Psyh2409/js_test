@@ -20,13 +20,16 @@ let input2 = document.createElement('input');
 input2.type = 'number';
 let val2 = input2.value;
 div.append(input2);
-
+div.append(document.createElement('br'));
+div.append(document.createElement('br'));
 div.style.textAlign = 'center';
-let result = document.createElement('h1');
-add = (x,y) => {result.innerText = parseInt(x+y)};
-sub = (x,y) => {result.innerText = parseInt(x-y)};
-mult = (x,y) => {result.innerText = parseInt(x*y)};
-divis = (x,y) => {result.innerText = parseInt(x/y)};
+let h1 = document.createElement('h1');
+let result = 0;
+h1.textContent = result;
+add = (x,y) => {result = x+y};
+sub = (x,y) => {result = x-y};
+mult = (x,y) => {result = x*y};
+divis = (x,y) => {result = x/y};
 
 for(let i = 0; i<4; i++){
     let button = document.createElement('button');
