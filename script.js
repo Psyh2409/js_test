@@ -26,8 +26,6 @@ input2.type = 'number';
 input2.style.fontSize = '2vw';
 console.log(val2);
 div.append(input2);
-// div.append(document.createElement('br'));
-// div.append(document.createElement('br'));
 div.style.textAlign = 'center';
 let h1 = document.createElement('h1');
 let result = 0;
